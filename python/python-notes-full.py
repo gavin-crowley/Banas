@@ -325,7 +325,7 @@ while w2 <= 20:
         continue
     w2 += 1
  
-# Cycle through list
+# Cycle through list using while
 l4 = [1, 3.14, "Derek", True]
 while len(l4):
     print(l4.pop(0))
@@ -337,6 +337,9 @@ while len(l4):
 for x in range(0, 10):
     print(x, ' ', end="")
 print('\n')
+
+for x in range(0, 10):
+    print(x, end=" ")
  
 # Cycle through list
 l4 = [1, 3.14, "Derek", True]

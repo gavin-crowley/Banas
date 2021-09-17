@@ -199,142 +199,121 @@ str3 = "Hello You"
  
 # You could also slice front and back and replace
 # what you want to change
-str3 = str3[:8] + "y" + str3[9:]
-print(str3)
+# change str3 to Hello you by replacing Y
  
 # Test if string in string
-print("you" in str3)
+# Is "you" in str3?
  
 # Test if not in
-print("you" not in str
-    3)
+# Is "you" not in str3
  
-# Find first index for match or -1
-print("You Index ", str3.find("you"))
+# Find first index for match or -1 -> doesn't find it
+# Find index start for "you"
  
 # Trim white space from right and left
 # also lstrip and rstrip
-print("    Hello    ".strip())
+
  
 # Convert a list into a string and separate with
 # spaces
-print(" ".join(["Some", "Words"]))
  
 # Convert string into a list with a defined separator
 # or delimiter
-print("A, string".split(", "))
  
 # Formatted output with f-string
-int1 = int2 = 5
-print(f'{int1} + {int2} = {int1 + int2}')
+# f-strings are string literals that have an f at the 
+# beginning and curly braces containing expressions
+
+# int1 = int2 = 5
+# add the above
  
+#
+
 # To lower and upper case
-print("A String".lower())
-print("A String".upper())
+ 
  
 # Is letter or number
-print("abc123".isalnum())
+# isalnum() checks whether all characters in a string 
+# are alphanumeric
  
 # Is characters
-print("abc".isalpha())
  
 # Is numbers
-print("abc".isdigit())
  
 # ----- LISTS -----
 # Lists can contain mutable pieces of data of
 # varying data types or even functions
-l1 = [1, 3.14, "Derek", True]
+# make a list with a int float string bool
  
 # Get length
-print("Length ", len(l1))
+
  
 # Get value at index
-print("1st", l1[0])
-print("Last", l1[-1])
+# first
+# last
  
-# Change value
-l1[0] = 2
+# Change value, can change with method unlike strings
+
  
 # Change multiple values
-l1[2:4] = ["Bob", False]
+# 2 up to 4 not including 4
  
 # Insert at index without deleting
-# Also l1.insert(2, "Paul")
-l1[2:2] = ["Paul", 9]
+# (2, "Paul")
+# 2 methods
  
-# Add to end (Also l1.extend([5, 6]))
-l2 = l1 + ["Egg", 4]
+# Add to end 
+# 3 methods
  
 # Remove a value
-l2.remove("Paul")
+
  
 # Remove at index
-l2.pop(0)
-print("l2", l2)
+
  
-# Add to beginning (Also l1.append([5, 6]))
-l2 = ["Egg", 4] + l1
+# Add to beginning 
+# 1 method
  
 # Multidimensional list
-l3 = [[1, 2], [3, 4]]
-print("[1, 1]", l3[1][1])
+
  
 # Does value exist
-print("1 Exists", (1 in l1))
+# check 1 is in list
  
-# Min & Max
-print("Min ", min([1, 2, 3]))
-print("Max ", max([1, 2, 3]))
+# Min & Max of a list
+
  
 # Slice out parts
-print("1st 2", l1[0:2])
-print("Every Other ", l1[0:-1:2])
-print("Reverse ", l1[::-1])
+# 1st 2
+# Every Other
+# Reverse
  
 # ----- LOOPS -----
 # While : Execute while condition is True
-w1 = 1
-while w1 < 5:
-    print(w1)
-    w1 += 1
+# must define index outside of loop
+# make sure work towards condition being false
+
+# count out 1 2 3 4 with while loop
  
-w2 = 0
-while w2 <= 20:
-    if w2 % 2 == 0:
-        print(w2)
-    elif w2 == 9:
-        # Forces the loop to end all together
-        break
-    else:
-        # Shorthand for i = i + 1
-        w2 += 1
-        # Skips to the next iteration of the loop
-        continue
-    w2 += 1
+# write while loops using break and continue
  
-# Cycle through list
-l4 = [1, 3.14, "Derek", True]
-while len(l4):
-    print(l4.pop(0))
+# Cycle through list using while loop
+ 
  
 # For Loop
 # Allows you to perform an action a set number of times
 # Range performs the action 10 times 0 - 9
 # end="" eliminates newline
-for x in range(0, 10):
-    print(x, ' ', end="")
-print('\n')
+
+# print 0 to 9 on one line spaced
  
-# Cycle through list
+# Cycle through list with for loop
 l4 = [1, 3.14, "Derek", True]
-for x in l4:
-    print(x)
+
  
 # You can also define a list of numbers to
 # cycle through
-for x in [2, 4, 6]:
-    print(x)
+
  
 # You can double up for loops to cycle through lists
 num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
