@@ -5,7 +5,7 @@ import threading
 import time
 from functools import reduce
  
-# ----- INTRO -----
+# ----- INTRO ------
 
 # Python statements terminate with a newline
 # print a python statement
