@@ -135,7 +135,7 @@ print("degrees(pi) ", math.degrees(math.pi))
 # inf is infinity
 # is inf > 0?
  
-    # NaN (Not a Number) is used to represent a number that can't
+# NaN (Not a Number) is used to represent a number that can't
 # be defined
 # subtract inf from inf 
  
@@ -322,8 +322,7 @@ num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
 # You can pass an object to iter() which returns
 # an iterator which allows you to cycle
 l5 = [6, 9, 12]
-itr = iter(l5)
-print(next(itr))  # Grab next value
+# Iterate l5
  
 # ----- RANGES -----
 # The range() function creates integer iterables
