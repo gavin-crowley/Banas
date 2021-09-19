@@ -315,9 +315,6 @@ l4 = [1, 3.14, "Derek", True]
 # cycle through
 
  
-# You can double up for loops to cycle through lists
-num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
- 
 # ----- ITERATORS -----
 # You can pass an object to iter() which returns
 # an iterator which allows you to cycle
@@ -326,29 +323,28 @@ l5 = [6, 9, 12]
  
 # ----- RANGES -----
 # The range() function creates integer iterables
-print(list(range(0, 5)))
+# print a list from 0 to 4
  
 # You can define step
-print(list(range(0, 10, 2)))
- 
-for x in range(0, 3):
-    for y in range(0, 3):
-        print(num_list[x][y])
+# print a list from 0 to 10 in steps of 2
  
 # ----- TUPLES -----
 # Tuples are just like lists except they are
 # immutable
-t1 = (1, 3.14, "Derek", False)
+# can do everything you can do with a list except
+# you can't change a value
+
+#create a tuple with an int, float and string
  
 # Get length
-print("Length ", len(t1))
+print("Length ", )
  
 # Get value / values
-print("1st", t1[0])
-print("Last", t1[-1])
-print("1st 2", t1[0:2])
-print("Every Other ", t1[0:-1:2])
-print("Reverse ", t1[::-1])
+print("1st", )
+print("Last", )
+print("1st 2", )
+print("Every Other ", )
+print("Reverse ", )
  
 # Everything you can do with lists you can do with
 # tuples as long as you don't change values
@@ -357,97 +353,76 @@ print("Reverse ", t1[::-1])
 # Dictionaries are lists of key / value pairs
 # Keys and values can use any data type
 # Duplicate keys aren't allowed
-heroes = {
-    "Superman": "Clark Kent",
-    "Batman": "Bruce Wayne"
-}
- 
-villains = dict([
-    ("Lex Luthor", "Lex Luthor"),
-    ("Loki", "Loki")
-])
- 
-print("Length", len(heroes))
+
+# write dictionaries in two ways
+
+# get length of dictionary
  
 # Get value by key
 # Also heroes.get("Superman")
-print(heroes["Superman"])
+
+
+# Add another key / value pair
  
-# Add more
-heroes["Flash"] = "Barry Allan"
+# Change that value
  
-# Change a value
-heroes["Flash"] = "Barry Allen"
+# Get list of tuples of heroes
  
-# Get list of tuples
-print(list(heroes.items()))
+# Get list of keys and of values
+
+# Delete new entry from dictionary
+
  
-# Get list of keys and values
-print(list(heroes.keys()))
-print(list(heroes.values()))
+# Remove a key from heroes
  
-# Delete
-del heroes["Flash"]
- 
-# Remove a key and return it
-print(heroes.pop("Batman"))
- 
-# Search for key
-print("Superman" in heroes)
+# Search for key in heroes
+
  
 # Cycle through a dictionary
-for k in heroes:
-    print(k)
- 
-for v in heroes.values():
-    print(v)
+
+# Cycle through using values 
+
  
 # Formatted print with dictionary mapping
 d1 = {"name": "Bread", "price": .88}
-print("%(name)s costs $%(price).2f" % d1)
+# Print this out using d1: Bread costs $0.88
  
 # ----- SETS -----
 # Sets are lists that are unordered, unique
 # and while values can change those values
 # must be immutable
-s1 = set(["Derek", 1])
- 
-s2 = {"Paul", 1}
+
+# create sets s1, s2 in two different ways
+
+
  
 # Size
-print("Length", len(s2))
+
  
 # Join sets
-s3 = s1 | s2
-print(s3)
+# make an s3
  
 # Add value
-s3.add("Doug")
+# add to s3
  
 # Remove value
-s3.discard("Derek")
+# remove from s3
  
-# Remove random value
-print("Random", s3.pop())
- 
+# Remove random value. Is random because it's an unordered list
+
 # Add values in s2 to s3
-s3 |= s2
+
  
 # Return common values (You can include multiple
 # sets as attributes)
-print(s1.intersection(s2))
  
 # All unique values
-print(s1.symmetric_difference(s2))
  
 # Values in s1 but not in s2
-print(s1.difference(s2))
  
 # Clear values
-s3.clear()
  
 # Frozen sets can't be edited
-s4 = frozenset(["Paul", 7])
  
  
 # ----- FUNCTIONS -----
